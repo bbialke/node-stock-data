@@ -1,2 +1,3 @@
 # node-stock-data
-Easy to use stock tracking API for Node.js using marketstack as the source.
+Node-stock-data is a simple, easy to implement stock tracking API for Node.js using [marketstack](https://marketstack.com) as the source. 
+- Note: While the majority of features are available to all users, some may require a paid plan on marketstack.
