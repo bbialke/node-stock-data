@@ -23,5 +23,15 @@
   "bugs": {
     "url": "https://github.com/bbialke/node-stock-data/issues"
   },
-  "homepage": "https://github.com/bbialke/node-stock-data#readme"
+  "homepage": "https://github.com/bbialke/node-stock-data#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "dotenv": "^8.2.0",
+    "mocha": "^8.3.2"
+  }
 }
