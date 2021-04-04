@@ -1,0 +1,27 @@
+{
+  "name": "node-stock-data",
+  "version": "1.0.0",
+  "description": "An easy to use stock tracking API for Node.js using marketstack as the source.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbialke/node-stock-data.git"
+  },
+  "keywords": [
+    "stock",
+    "tracking",
+    "realtime",
+    "node",
+    "stock-data",
+    "marketstack"
+  ],
+  "author": "Bradley Bialke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbialke/node-stock-data/issues"
+  },
+  "homepage": "https://github.com/bbialke/node-stock-data#readme"
+}
