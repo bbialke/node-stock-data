@@ -11,10 +11,10 @@ function checkCorrectOptions(options) {
   const {
     limit, symbols, exchange, sort, date_from, date_to, offset
   } = options;
-  if (limit !== undefined && (Number(limit) < 1 || Number(limit) > 1000)) {
-    throw new Error(`limit value should be between 1-1000 ${VISIT}`);
+  if (limit !== undefined && (Number(limit) < 1 || Number(limit) > 100)) {
+    throw new Error(`limit value should be between 1-100 ${VISIT}`);
   }
-  if(symbols.length > 1){
+  if(symbols == undefined){
     throw new Error(`no symbols were specified. ${VISIT}`)
   }
   if (exchange !== undefined && (exchange.length > 4)) {
@@ -29,8 +29,8 @@ function checkCorrectOptions(options) {
   if (date_to !== undefined && !validDate(date_to)) {
     throw new Error(`date_to ${DATE_ERROR} ${VISIT}`);
   }
-  if (offset !== undefined && (Number(offset) < 1 || Number(offset) > 1000)) {
-    throw new Error(`offset value should be between 1-1000 ${VISIT}`);
+  if (offset !== undefined && (Number(offset) < 1 || Number(offset) > 100)) {
+    throw new Error(`offset value should be between 1-100 ${VISIT}`);
   }
 }
 
