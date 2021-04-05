@@ -43,4 +43,9 @@ describe('testing successful queries', () => {
     expect(data.count).to.be.equals(1);
     expect(data['data']).to.be.length(1);
   });
+  it('should return data of BA stock from 2021-03-15 to 2021-03-17 without error', async () => {
+    const data = await stocks({API_TOKEN: apiToken, options: {limit: 3, date_from: '2021-03-15', date_to: '2021-03-17', symbols: 'BA'}});
+    expect(data.count).to.be.equals(3);
+    expect(data['data']).to.be.length(3);
+  });
 });
