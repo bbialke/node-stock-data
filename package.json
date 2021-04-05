@@ -1,6 +1,6 @@
 {
   "name": "node-stock-data",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "An easy to use stock tracking API for Node.js using marketstack as the source.",
   "main": "index.js",
   "scripts": {
