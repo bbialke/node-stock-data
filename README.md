@@ -1,4 +1,5 @@
 # node-stock-data
+[![Build Status](https://travis-ci.com/bbialke/node-stock-data.svg?branch=main)](https://travis-ci.com/bbialke/node-stock-data)
 
 Node-stock-data is a simple, easy to implement stock tracking API for Node.js that uses [marketstack](https://marketstack.com/) to quickly get current or historical data on any stock.
 
