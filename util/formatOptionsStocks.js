@@ -20,7 +20,7 @@ function checkCorrectOptions(options) {
   if (exchange !== undefined && (exchange.length > 4)) {
     throw new Error(`exchange code should be 4 characters long. ${VISIT}`);
   }
-  if (sort !== undefined && ['DESC', 'ASC'].indexOf(sort_by) === -1) {
+  if (sort !== undefined && ['DESC', 'ASC'].indexOf(sort) === -1) {
     throw new Error(`sort does not have a valid option. ${VISIT}`);
   }
   if (date_from !== undefined && !validDate(date_from)) {

@@ -10,7 +10,7 @@ function mergeData(fetchedData) {
   return mergedData;
 }
 
-async function stocks({
+async function stocksIntraday({
   API_TOKEN, options
 }) {
   const URL = 'https://api.marketstack.com/v1/intraday';
