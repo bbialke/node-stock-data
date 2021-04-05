@@ -10,7 +10,7 @@ function mergeData(fetchedData) {
   return mergedData;
 }
 
-async function stocks({
+async function exchanges({
   API_TOKEN, options
 }) {
   const URL = 'http://api.marketstack.com/v1/exchanges';
