@@ -25,6 +25,7 @@ Head to [marketstack](https://marketstack.com/) and obtain a free API token by c
 With a free account, you can make a maximum of 1000 API calls per month. You can check your usage from their dashboard.
 ## Usage
 Since the API token is private, it's recommended to keep it in a separate configuration file or use it as an environment variable.
+
 Each example uses:
 ```js
 const stockdata = require('node-stock-data');
@@ -65,7 +66,7 @@ stockdata.exchanges(
     ...
 });
 ```
-When using the `search` parameter, both the exchange's name and their Market Identification Code (MIC) is accepted. For a full list of MICs, look at [this list](https://www.tradinghours.com/mic).
+When using the `search` parameter, both the exchange's name and their Market Identification Code (MIC) are accepted. For a full list of MICs, look at [this list](https://www.tradinghours.com/mic).
 ### Intraday stock lookup
 - Note: This feature requires a paid plan on marketstack.
 ```js
@@ -162,7 +163,7 @@ Please make sure to update tests as appropriate.
 All data gathered comes from the [marketstack](https://marketstack.com/) API. They could choose to modify their terms of service at any time. Please see their [website](https://marketstack.com/) and [documentation](https://marketstack.com/documentation) for the most accurate information about their service.
 ### Important:
 - The author and any contributors to this software are not affiliated in any form with marketstack or its affiliates. This software does not endorse any products sold by marketstack and does not receive any compensation from purchases of paid plans.
-- This software is meant for informational purposes only, and is not intended to serve as a recommendation to buy or sell any security, nor is it an offer or sale of a security. This data is not intended to serve as a research report, or the basis of any financial decision. 
+- This software is meant for informational purposes only, and is not intended to serve as a recommendation to buy or sell any security, nor is it an offer or sale of a security. This data is not intended to serve as a research report or the basis of any financial decision. 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
