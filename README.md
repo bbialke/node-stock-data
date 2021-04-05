@@ -93,9 +93,9 @@ stockdata.stocks(
 {
   API_TOKEN: 'YOUR API TOKEN',
   options: {
-    limit: 3,
+    limit: 2,
     date_from: '2021-01-07',
-    date_to: '2020-01-09',
+    date_to: '2021-01-09',
     symbols: 'BA'
   }
 })
