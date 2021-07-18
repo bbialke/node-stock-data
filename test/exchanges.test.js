@@ -1,7 +1,6 @@
 const chai = require('chai');
 const chaiAsPromised = require('chai-as-promised');
 const exchanges = require('../functions/exchanges');
-const assert = require('assert');
 require('dotenv').config();
 const apiToken = process.env.API_TOKEN;
 
