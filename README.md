@@ -48,6 +48,26 @@ stockdata.stocks(
     ...
 });
 ```
+### Ticker exchange information lookup
+```js
+// Get the latest information on the CD PROJEKT ticker on Warsaw Stock Exchange (CDR/XWAR)
+stockdata.tickers(
+{
+  API_TOKEN: 'YOUR API TOKEN',
+  options: {
+    limit: 1,
+    search: 'CDR',
+    exchange: 'XWAR', //optional
+    
+  }
+})
+.then(response => {
+    ...
+  })
+.catch(error => {
+    ...
+});
+```
 ### Stock exchange information lookup
 ```js
 // Get the latest information on the NASDAQ stock exchange (XNAS)

@@ -1,11 +1,8 @@
-const moment = require('moment');
-
-const VISIT = 'Visit https://marketstack.com/documentation for more information';
+const VISIT =
+  'Visit https://marketstack.com/documentation for more information';
 
 function checkCorrectOptions(options) {
-  const {
-    limit, search, offset
-  } = options;
+  const { limit, search, offset } = options;
   if (limit !== undefined && (Number(limit) < 1 || Number(limit) > 100)) {
     throw new Error(`limit value should be between 1-100 ${VISIT}`);
   }
@@ -20,19 +17,18 @@ function checkCorrectOptions(options) {
 function formatOptions(options) {
   let query = '&';
   if (options === undefined) {
-    throw new Error(`Please specify options for the query. ${VISIT}`)
+    throw new Error(`Please specify options for the query. ${VISIT}`);
   }
   try {
     checkCorrectOptions(options);
   } catch (error) {
     throw error;
   }
-  const {
-    limit, search, offset
-  } = options;
+  const { limit, search, offset, exchange } = options;
   query += limit !== undefined ? `limit=${limit}&` : '';
   query += search !== undefined ? `search=${search}&` : '';
   query += offset !== undefined ? `offset=${offset}&` : '';
+  query += exchange !== undefined ? `exchange=${exchange}&` : '';
   return query;
 }
 
