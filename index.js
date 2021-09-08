@@ -1,5 +1,6 @@
 module.exports = {
+  exchanges: require('./functions/exchanges'),
   stocks: require('./functions/stocks'),
   stocksIntraday: require('./functions/stocksIntraday'),
-  exchanges: require('./functions/exchanges')
+  tickers: require('./functions/tickers')
 }
