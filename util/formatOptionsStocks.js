@@ -49,8 +49,8 @@ function formatOptions(options) {
   } = options;
   query += limit !== undefined ? `limit=${limit}&` : '';
   query += symbols !== undefined ? `symbols=${symbols}&` : '';
-  query += exchange !== undefined ? `symbols=${exchange}&` : '';
-  query += sort !== undefined ? `dep_iata=${sort}&` : '';
+  query += exchange !== undefined ? `exchange=${exchange}&` : '';
+  query += sort !== undefined ? `sort=${sort}&` : '';
   query += date_from !== undefined ? `date_from=${date_from}&` : '';
   query += date_to !== undefined ? `date_to=${date_to}&` : '';
   query += offset !== undefined ? `offset=${offset}&` : '';
